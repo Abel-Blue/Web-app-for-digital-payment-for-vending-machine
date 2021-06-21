@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Products</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,100;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/products.html">Products</a></li>
+                        <li><a href="/Admin.html">Admin</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+        </div>
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Products</h2>
+                <select>
+                    <option>Default Sorting</option>
+                    <option>Sort by price</option>
+                    <option>Sort by popularity</option>
+                    <option>Sort by sale</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="product_details.html"><img src="image2/lifebuay.png"></a>
+                    <a href="product_details.html">
+                        <h4>Lifebuay</h4>
+                    </a>
+                    <p>Birr 12.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="image2/coke2.png">
+                    <h4>Coca Cola</h4>
+                    <p>Birr 20.00</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="image2/fanta.png">
+                    <h4>Fanta</h4>
+                    <p>Birr 20.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="image2/sun chips.png">
+                    <h4>Sun Chips</h4>
+                    <p>Birr 11.00</p>
+                </div>
+            </div>
+
+            <!-- <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+
+        </div> -->
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="footer-col-4">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>Euel & Abel</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>+251919395958</li>
+                        <li>abelmgetnet@gmail.com</li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Semester Project Demo</p>
+        </div>
+    </div>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
